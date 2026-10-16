@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Hair | Hair Salon Antwerp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#">STUDIO HAIR<span>.</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-book" href="#booking">Book now</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR HAIR, YOUR STYLE</p>
+        <h1>Good hair.<br>Good mood.</h1>
+        <p class="hero-text">
+          Your neighbourhood hair salon in Antwerp.
+          Discover your new favourite look.
+        </p>
+        <a class="button" href="#booking">Book an appointment ↗</a>
+        <p class="rating">★★★★★ <span>4.8/5 · Client favourite</span></p>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="eyebrow">WELCOME TO STUDIO HAIR</p>
+      <h2>A little time for yourself.</h2>
+      <p>
+        From a fresh cut to a complete new look,
+        our stylists help you feel your best.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR MENU</p>
+          <h2>Services & prices</h2>
+        </div>
+        <p>Find your perfect treatment.</p>
+      </div>
+
+      <article class="service">
+        <div>
+          <h3>Women's haircut</h3>
+          <p>Cut and professional styling</p>
+        </div>
+        <strong>€35</strong>
+        <button class="choose-service"
+          data-service="Women's haircut" data-price="35">
+          Select
+        </button>
+      </article>
+
+      <article class="service">
+        <div>
+          <h3>Men's haircut</h3>
+          <p>Fresh cut and finishing</p>
+        </div>
+        <strong>€25</strong>
+        <button class="choose-service"
+          data-service="Men's haircut" data-price="25">
+          Select
+        </button>
+      </article>
+
+      <article class="service">
+        <div>
+          <h3>Blow-dry</h3>
+          <p>Volume, shine and styling</p>
+        </div>
+        <strong>€20</strong>
+        <button class="choose-service"
+          data-service="Blow-dry" data-price="20">
+          Select
+        </button>
+      </article>
+    </section>
+
+    <section class="booking" id="booking">
+      <p class="eyebrow">MAKE IT YOUR MOMENT</p>
+      <h2>Ready for a fresh look?</h2>
+      <p>Choose a service and request your appointment.</p>
+
+      <form id="booking-form">
+        <label for="service">Your service</label>
+        <select id="service" required>
+          <option value="">Choose a service</option>
+          <option value="Women's haircut">Women's haircut — €35</option>
+          <option value="Men's haircut">Men's haircut — €25</option>
+          <option value="Blow-dry">Blow-dry — €20</option>
+        </select>
+
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" required>
+
+        <label for="name">Your name</label>
+        <input type="text" id="name"
+          placeholder="Full name" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email"
+          placeholder="you@example.com" required>
+
+        <button class="button submit-button" type="submit">
+          Request appointment
+        </button>
+        <p id="message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a class="logo" href="#">STUDIO HAIR<span>.</span></a>
+    <p>Antwerp, Belgium · By appointment</p>
+    <p>Opening hours: Tue–Sat, 09:00–18:00</p>
+    <p>© 2026 Studio Hair. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
